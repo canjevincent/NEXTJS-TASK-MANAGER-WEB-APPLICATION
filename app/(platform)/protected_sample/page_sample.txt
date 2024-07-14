@@ -1,0 +1,39 @@
+# By Default, every page is a server component.
+# Always use async/await if there's a promise.
+
+import { currentUser } from "@clerk/nextjs"
+
+const ProtectedPage = async () => {
+
+  constr user = await currentUser();
+  const { userId } = auth();
+
+  return (
+    <div>
+      User: {user?.firstName}
+      userId: {userId}
+    </div>
+  )
+}
+
+export default ProtectedPage;
+
+# Client Component
+
+"use client";
+
+import { useAuth, useUser } from "@clerk/nextjs";
+
+const ProtectedPage = () => {
+  const { userId } = useAuth();
+  const { user } = useUser();
+
+  return (
+    <div>
+      User: {user?.firstName}
+      userId: {userId}
+    </div>
+  )
+}
+
+export default ProtectedPage

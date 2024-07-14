@@ -1,0 +1,75 @@
+(1) npx create-next-app@latest
+
+  √ Would you like to use TypeScript? ... No / Yes-
+  √ Would you like to use ESLint? ... No / Yes-
+  √ Would you like to use Tailwind CSS? ... No / Yes-
+  √ Would you like to use `src/` directory? ... No- / Yes
+  √ Would you like to use App Router? (recommended) ... No / Yes-
+  √ Would you like to customize the default import alias (@/*)? ... No- / Yes
+
+(2) npx shadcn-ui@latest init
+
+  √ Which style would you like to use? » Default
+  √ Which color would you like to use as base color? » Neutral
+  √ Would you like to use CSS variables for colors? ... no / yes
+
+npx shadcn-ui@latest add button
+npx shadcn-ui@latest add skeleton
+npx shadcn-ui@latest add accordion
+npx shadcn-ui@latest add separator
+npx shadcn-ui@latest add sheet
+npx shadcn-ui@latest add input
+npx shadcn-ui@latest add label
+npx shadcn-ui@latest add tooltip
+npx shadcn-ui@latest add popover
+npx shadcn-ui@latest add textarea
+npx shadcn-ui@latest add dialog
+npx shadcn-ui@latest add avatar
+
+npm install @clerk/nextjs
+npm install usehooks-ts
+npm install zustand
+
+npm install -D prisma
+npx prisma init
+npm install @prisma/client
+
+npm install sonner
+npm install unsplash-js
+
+"To erase all tables"
+npx prisma migrate reset
+
+"Assign new schema to database"
+npx prisma db push
+
+"After creating schema to generate or modify model"
+npx prisma generate
+
+"To push model to mysql"
+npx prisma db push
+
+"To check prisma database"
+npx prisma studio
+
+npm install zod
+
+"Lodash setup and types"
+npm install lodash
+npm install -D @types/lodash
+
+"Drag and drop integration"
+npm i @hello-pangea/dnd
+
+"React Query"
+npm install @tanstack/react-query
+
+"Date Format"
+npm install date-fns
+
+"For Payment Gateway"
+npm install stripe
+
+C:\xampp\htdocs\stripe.exe listen --forward-to localhost:3000/api/webhook
+
+'npm run dev'
